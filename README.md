@@ -15,9 +15,9 @@ get_middle("A") # => "A"
 get_middle("of") # => "of"
 
 ## Initial Thoughts
-- accepts a string
+- accepts a string [DONE]
 - reads the length of the string
 - selects a position in that string
-- returns a character
+- returns a character [DONE]
 
 - 1 class: MiddleCharac
