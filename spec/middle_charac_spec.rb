@@ -11,6 +11,10 @@ RSpec.describe MiddleCharacterFinder do
       expect(@middle_character_finder.get_middle("A")).to eq("A")
     end
 
+    it "returns the middle letter of a string of odd length" do
+      expect(@middle_character_finder.get_middle("testing")).to eq("t")
+    end
+
   end
 
 end
