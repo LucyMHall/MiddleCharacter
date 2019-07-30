@@ -1,6 +1,6 @@
 class MiddleCharacterFinder
 
-  def run(string)
+  def get_middle(string)
     string
   end
 end
