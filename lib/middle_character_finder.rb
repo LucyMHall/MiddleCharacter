@@ -1,13 +1,26 @@
 class MiddleCharacterFinder
 
   def get_middle(string)
-    if string.length % 2 == 0
-      second_middle_character = string.length/2
-      first_middle_character = second_middle_character - 1
-      string[first_middle_character] + string[second_middle_character]
+    if is_even_length?(string)
+      string[find_second_middle_index(string)] + string[find_middle_index(string)]
     else
-      middle_character = string.length/2
-      string[middle_character]
+      string[find_middle_index(string)]
     end
   end
+
+  private
+
+  def is_even_length?(string)
+    string.length % 2 == 0
+  end
+
+  def find_middle_index(string)
+    string.length/2
+  end
+
+  def find_second_middle_index(string)
+    string.length/2 -1
+  end
+
+
 end
